@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Seguimiento de ubicación con Leaflet</title>
+
+  <link rel="stylesheet" href="./geo_app_styles.css" />
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+</head>
+
+<body>
+  <div id="controls">
+    <button id="startBtn">Iniciar seguimiento</button>
+    <button id="stopBtn" disabled>Detener</button>
+    <span id="status">Listo para iniciar seguimiento.</span>
+    <span id="modeLabel"></span>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <!-- Tu JavaScript separado -->
+  <script src="./geo_app.js"></script>
+</body>
+</html>
